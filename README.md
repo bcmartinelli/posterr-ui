@@ -15,7 +15,7 @@ This project was developed for Strider frontend position using React.
 - Install dependencies `npm install` or `yarn`
 
 ## Start development server
-Run `json-server --watch db.json --port 3004`.
+Run `json-server --watch db.json --port 3004`.<br />
 Run `npm start` or `yarn start` for a dev server. Access http://localhost:3000 in your browser. 
 
 ##### Attention
