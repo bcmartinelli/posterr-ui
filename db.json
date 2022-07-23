@@ -1,0 +1,240 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "type": "POST",
+      "repost": null,
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 1,
+        "photo": "",
+        "name": "Bruno C. Martinelli",
+        "username": "martinelli4630"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet."
+    },
+    {
+      "id": 2,
+      "type": "POST",
+      "repost": null,
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 2,
+        "photo": "",
+        "name": "Fernando de Oliveira Prado",
+        "username": "foliveiraprado"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus, ipsum vitae bibendum facilisis, odio dolor dignissim neque, a lacinia."
+    },
+    {
+      "id": 3,
+      "type": "REPOST",
+      "repost": {
+        "id": 1,
+        "type": "POST",
+        "repost": null,
+        "createDate": "2022-7-21",
+        "user": {
+          "id": 1,
+          "photo": "",
+          "name": "Bruno C. Martinelli",
+          "username": "martinelli4630"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet."
+      },
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 2,
+        "photo": "",
+        "name": "Fernando de Oliveira Prado",
+        "username": "foliveiraprado"
+      },
+      "body": ""
+    },
+    {
+      "id": 4,
+      "type": "POST",
+      "repost": null,
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 3,
+        "photo": "",
+        "name": "Rafaela Moraes",
+        "username": "rmoraes"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum ligula et fermentum dignissim. Morbi scelerisque nulla eget erat bibendum fringilla. Praesent eleifend, quam."
+    },
+    {
+      "id": 5,
+      "type": "QUOTE",
+      "repost": {
+        "id": 2,
+        "type": "POST",
+        "repost": null,
+        "createDate": "2022-7-21",
+        "user": {
+          "id": 2,
+          "photo": "",
+          "name": "Fernando de Oliveira Prado",
+          "username": "foliveiraprado"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus, ipsum vitae bibendum facilisis, odio dolor dignissim neque, a lacinia."
+      },
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 3,
+        "photo": "",
+        "name": "Rafaela Moraes",
+        "username": "rmoraes"
+      },
+      "body": "Lorem ipsum dolor."
+    },
+    {
+      "id": 6,
+      "type": "POST",
+      "repost": null,
+      "createDate": "2022-7-21",
+      "user": {
+        "id": 4,
+        "photo": "",
+        "name": "James Bond",
+        "username": "jb007"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum ligula et fermentum dignissim. Morbi scelerisque nulla eget erat bibendum fringilla. Praesent eleifend, quam."
+    },
+    {
+      "createDate": "2022-7-22",
+      "type": "REPOST",
+      "repost": {
+        "type": "POST",
+        "repost": null,
+        "user": {
+          "id": 4,
+          "photo": "",
+          "name": "James Bond",
+          "username": "jb007"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum ligula et fermentum dignissim. Morbi scelerisque nulla eget erat bibendum fringilla. Praesent eleifend, quam."
+      },
+      "user": {
+        "id": 1,
+        "photo": "",
+        "name": "Bruno C. Martinelli",
+        "username": "martinelli4630"
+      },
+      "body": "",
+      "id": 7
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "Bruno C. Martinelli",
+      "username": "martinelli4630",
+      "photo": "",
+      "createAt": "2021-03-21",
+      "followers": [
+        2,
+        4
+      ],
+      "following": [
+        2
+      ],
+      "posts": []
+    },
+    {
+      "id": 2,
+      "photo": "",
+      "name": "Fernando de Oliveira Prado",
+      "username": "foliveiraprado",
+      "createAt": "2020-06-21",
+      "followers": [
+        1
+      ],
+      "following": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 3,
+      "photo": "",
+      "name": "Rafaela Moraes",
+      "username": "rmoraes",
+      "createAt": "2022-01-09",
+      "followers": [],
+      "following": [
+        4
+      ],
+      "posts": [
+        {
+          "id": 5,
+          "type": "QUOTE",
+          "repost": {
+            "id": 2,
+            "type": "POST",
+            "repost": null,
+            "createDate": "2022-7-21",
+            "user": {
+              "id": 2,
+              "photo": "",
+              "name": "Fernando de Oliveira Prado",
+              "username": "foliveiraprado"
+            },
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus, ipsum vitae bibendum facilisis, odio dolor dignissim neque, a lacinia."
+          },
+          "createDate": "2022-7-21",
+          "user": {
+            "id": 3,
+            "photo": "",
+            "name": "Rafaela Moraes",
+            "username": "rmoraes"
+          },
+          "body": "Lorem ipsum dolor."
+        },
+        {
+          "id": 4,
+          "type": "POST",
+          "repost": null,
+          "createDate": "2022-7-21",
+          "user": {
+            "id": 3,
+            "photo": "",
+            "name": "Rafaela Moraes",
+            "username": "rmoraes"
+          },
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum ligula et fermentum dignissim. Morbi scelerisque nulla eget erat bibendum fringilla. Praesent eleifend, quam."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "photo": "",
+      "name": "James Bond",
+      "username": "jb007",
+      "createAt": "August 1, 2019",
+      "followers": [
+        2
+      ],
+      "following": [
+        1,
+        2
+      ],
+      "posts": [
+        {
+          "id": 6,
+          "type": "POST",
+          "repost": null,
+          "createDate": "2022-7-21",
+          "user": {
+            "id": 4,
+            "photo": "",
+            "name": "James Bond",
+            "username": "jb007"
+          },
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum ligula et fermentum dignissim. Morbi scelerisque nulla eget erat bibendum fringilla. Praesent eleifend, quam."
+        }
+      ]
+    }
+  ]
+}

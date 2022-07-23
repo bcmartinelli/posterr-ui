@@ -1,0 +1,78 @@
+@import '../../styles/colors';
+@import '../../styles/utils';
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+
+  &.no-profile {
+    img, .user-name, .user-username { &:hover { cursor: default; opacity: 1;} }
+  }
+
+  img {
+    width: 100%;
+    max-width: 50px;
+    height: 100%;
+    max-height: 50px;
+    cursor: pointer;
+    &:hover { opacity: 0.9; }
+  }
+
+  .user-detail {
+    .user-name {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      cursor: pointer;
+      &:hover { text-decoration: underline; }
+    }
+
+    .user-username {
+      cursor: pointer;
+      &:hover { text-decoration: underline; }
+    }
+
+    &.linear {
+      display: flex;
+      gap: 0.5rem;
+      
+      .user-name {
+        margin-bottom: 0;
+      }
+    }    
+  }
+
+  &.very-small {
+    gap: 0.4rem;
+    img {
+      max-width: 28px;
+      max-height: 28px;
+    }
+    .user-detail {
+      font-size: 0.8rem;
+    }
+  }
+
+  &.small {
+    gap: 0.7rem;
+    img {
+      max-width: 38px;
+      max-height: 38px;
+    }
+    .user-detail {
+      font-size: 0.9rem;
+    }
+  }
+
+  &.big {
+    gap: 1.2rem;
+    img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+    .user-detail {
+      font-size: 1.2rem;
+    }
+  }
+}
