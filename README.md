@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# posterR
+This project was developed for Strider frontend position using React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## System Requirements
 
-## Available Scripts
+- MacOS, Windows (including WSL), and Linux are supported
+- [Node.js](https://nodejs.org/en/) (v16.15.1)
+- [JSON Serve](https://www.npmjs.com/package/json-server/v/0.17.0) (V0.17.0)
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) (Optional)
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+- Clone project https://github.com/martinelli4630/posterr-ui.git
+- Enter project folder `cd posterr-ui`
+- Install dependencies `npm install` or `yarn`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Start development server
+Run `json-server --watch db.json --port 3004`.
+Run `npm start` or `yarn start` for a dev server. Access http://localhost:3000 in your browser. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### Attention
+All mocked data and new records are easily accessible in the `db.json` file at the root of the project. To delete/change any record or post just modify it.
 
-### `npm test`
+## Planning
+With the implemetation of new feature "reply-to-post", I would like to know  that considering that currentily our system limit the user to a maximum 5 post/repost/quot per day, we will add to this limit this new feature or increase the limit per day or we will to leave without limit for this feature?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Regarding these questions, the changes will be minimal on the frontend, for the backend it maybe necessary to pay more attention because in addition to removing the lock, it'll be necessary to analyze the performance of the database.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Critique
+Considering the code, if I had more time I would make more components and refactor some logic to improve performance. If this project were to grow and have many users, I think the first problem will be performance because currently lists all posts without pagination. To scale this product I would implement lazy loading and infinite scrolling or pagination in posts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributors
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Bruno Martinelli](https://github.com/martinelli4630)
